@@ -1,0 +1,354 @@
+#balao {
+    position: absolute;
+    animation-name: balao;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+
+}
+
+main #home {
+    padding-top: 10rem;
+    color: #ffffff;
+    background: #BDDDF4;
+    min-height: 500px;
+    background-repeat: no-repeat;
+}
+main #home .text-home{
+    text-shadow: 0px 0px 5px #9c9b9b;
+
+}
+
+
+main #home .container {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+main .ilha img {
+    position: relative;
+    max-width: 100%;
+    animation-name: respiration;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+main section span {
+    font-size: 25px;
+
+}
+
+main section span.ima {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+/* Botão Dowload */
+#id_download a {
+    display: inline-block;
+    padding: 0.5 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    background-color: #5EACE3;
+    color: #fff;
+    border: 0;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    box-shadow: 2px 2px 1px 1px #005D9F;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#id_download a:hover {
+    box-shadow: 0 0 0 0 #005D9F, inset 3px 3px 3px #005D9F;
+    transform: translate(3px, 3px);
+}
+
+.icon-list {
+    list-style: none;
+    display: flex;
+}
+
+.icon-list img {
+    width: 50px;
+    margin: 10px;
+}
+
+.icon-list img:hover {
+    width: 70px;
+    margin: 0px;
+
+}
+
+#home .icon-list i::before{
+    color: #5EACE3;
+}
+
+.bi-linkedin:hover {
+    width: 70px;
+    margin: 0px;
+}
+
+#home .bi-linkedin:before {
+    margin: 2rem;
+    transform: scale(2);
+}
+
+#home .bi-github::before {
+    margin: 2rem;
+    transform: scale(2);
+}
+
+/* Animação */
+
+@keyframes respiration {
+    from {
+        top: 0%;
+    }
+
+    to {
+        top: 10%;
+    }
+}
+
+@keyframes type {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 140px;
+    }
+}
+
+@keyframes balao {
+    from {
+        left: -135px;
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-100%);
+    }
+
+    50% {
+        transform: translateY(0%);
+    }
+
+    to {
+        left: 100vw;
+        transform: translateY(-90%);
+    }
+}
+
+
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #3397df;
+    }
+}
+
+
+
+
+/* Cards */
+
+#card-section h2 {
+    text-align: center;
+    margin-bottom: 5rem;
+    color: #64AFE4;
+    text-shadow: 0px 0px 70px #fff;
+    font-size: 30px;
+
+}
+
+#card-section {
+    padding-top: 7rem;
+    background: linear-gradient(180deg, #BDDDF4 0%, rgba(207, 228, 243, 0.68) 50%, #FFFFFF 100%);
+    overflow: hidden;
+    position: relative;
+}
+
+#card-section .card img {
+    width: 7rem;
+
+}
+
+.card-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+
+
+}
+
+#card-section .card {
+    border-bottom: 10px solid #5EACE3;
+    border-top: 5px solid #5EACE3;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    position: relative;
+    height: 200px;
+    transition: 1s;
+    background-color: #ffffff;
+    overflow: hidden;
+    padding: 5px;
+
+}
+
+
+#card-section .card .card-header {
+    z-index: 1;
+    background-color: #ffffff;
+    width: 100%;
+    border-radius: 2rem;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+}
+
+#card-section .card:hover {
+    height: 500px;
+
+
+
+}
+
+#card-section h3 {
+    margin-bottom: 2rem;
+}
+
+#card-section a {
+    background-color: #5EACE3;
+    border-radius: .5rem;
+    margin: 3rem 0 1rem;
+    padding: 1rem;
+    display: inline-block;
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+    color: #00365c;
+}
+
+#card-section a:hover {
+    color: #FFFFFF;
+}
+
+#goal {
+    min-height: 600px;
+    background-color: #fff;
+    padding-bottom: 5rem;
+}
+
+#goal .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 10vh 0vh;
+    min-height: 600px;
+}
+
+#goal .container-image {
+    position: relative;
+
+
+}
+
+#goal .container-image img {
+    position: absolute;
+    animation-name: respiration2;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+#goal .container-image .drop-bottom {
+    top: 80px;
+    left: 120px;
+    animation-name: unset;
+}
+
+#goal .container-image .character {
+    top: 140px;
+    left: 220px;
+    width: 230px;
+    z-index: 2;
+    animation-delay: 1, 8s;
+}
+
+#goal .container-image .screen {
+    top: 100px;
+    left: 270px;
+    z-index: 1;
+    animation-delay: 1s;
+}
+
+#goal .container-image .planet-element {
+    top: 300px;
+    left: 150px;
+    z-index: 3;
+    animation-delay: .8s;
+}
+
+#goal .container-image .triangle-element {
+    top: 150px;
+    left: 150px;
+    z-index: 4;
+    animation-delay: 2.7s;
+}
+
+#goal .container-image .sphere-element {
+    top: 200px;
+    left: 300px;
+    width: 100px;
+    z-index: 4;
+    animation-delay: 1.7s;
+
+}
+
+@keyframes respiration2 {
+    from {
+        padding-top: 0;
+    }
+
+    to {
+        padding-top: 10px;
+    }
+}
+
+
+#goal .container-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+@media (max-width:426px) {
+
+    main #home .container {
+        grid-template-columns: 1fr;
+
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    #card-section .card,
+    #card-section .card:hover {
+        height: unset;
+    }
+}

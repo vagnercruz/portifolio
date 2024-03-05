@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Moulpali&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+
+main {
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+    transition: 0.3s;
+}
+
+#logo {
+    height: 55px;
+    margin-top: 5px;
+    position: absolute;
+    left: 20px;
+}
+
+
+
+header {
+    background-color: #5EACE3;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0px 0px 13px #333;
+
+}
+
+header ul {
+    font-family: 'Moulpali', cursive;
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+header ul a {
+    color: #00365c;
+    font-size: 20px;
+    padding: 10px;
+    display: inline-block;
+}
+
+header ul a:hover {
+    text-decoration: overline;
+    transition: .3s;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+}
+
+.container {
+    margin: auto;
+    max-width: 900px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.grid {
+    display: grid;
+}
+
+
+/* Darck mod */
+.dark,
+.dark header {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark header a {
+    color: #fff;
+}
+
+body.dark #section-contact {
+    background-color: #002642;
+}
+
+body.dark #section-contact .container-contact {
+    background: rgba(51, 51, 51, 0.88);
+}
+
+
+
+body.dark #section-contact h2 {
+    color: #fff;
+}
+
+body.dark #section-contact form label {
+    color: #fff;
+}
+
+body.dark #section-contact form button {
+    background-color: #016cb8;
+    box-shadow: 2px 2px 1px 1px #007dd6;
+}
+
+body.dark #section-contact form button:hover {
+    transform: translate(3px, 3px);
+    box-shadow: 0 0 0 0 #00111a, inset 3px 3px 3px #00111a;
+}
+
+body.dark {
+    background-color: #002642;
+}
+
+#change-theme-label {
+    height: 55px;
+    margin-top: 18px;
+    position: absolute;
+    right: 20px;
+    color: #294B63;
+}
+
+body.dark .bi-sun {
+    color: #ddd;
+}
+
+body.dark .bi-moon {
+    color: #fff;
+}
+
+body:not(.dark) .bi-sun {
+    color: #fff;
+}
+
+body.dark header ul a:hover {
+    /* color: #4D7285; */
+    text-decoration: overline;
+}
+
+body.dark main #home {
+    background-color: #002642;
+}
+
+body.dark #home .bi:before {
+    color: #016cb8
+}
+
+
+body.dark #card-section {
+    background: linear-gradient(180deg, #002642 0%, #00223B 47.2%, #011829 87.82%);
+}
+
+
+body.dark #goal {
+    background: #001829
+}
+
+
+body.dark #card-section .card .card-header {
+    background-color: #001829;
+}
+
+body.dark #card-section .card {
+    background-color: #001829;
+
+}
+
+body.dark #id_download a {
+    background-color: #016cb8;
+    box-shadow: 2px 2px 1px 1px #007dd6;
+}
+
+body.dark #id_download a:hover {
+    transform: translate(3px, 3px);
+    box-shadow: 0 0 0 0 #00111a, inset 3px 3px 3px #00111a;
+}
+
+body.dark #card-section h2 {
+    color: #fff;
+    text-shadow: 0px 0px 0px;
+}
+
+
+body.dark #card-section .card {
+    border-bottom: 10px solid #016cb8;
+    border-top: 5px solid #016cb8;
+}
+
+body.dark #card-section a {
+    background-color: #016cb8;
+
+}
+
+/* body.dark card-container grid {
+    background-color: #002642;
+} ARRUMAR */
+
+footer {
+    background-color: #0060A6;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff
+}
+
+
+@media (min-width:1440px) {
+    .container {
+        max-width: 1100px;
+    }
+}
+
+@media (max-width:426px) {
+    .container {
+        max-width: 300px;
+    }
+
+    body {
+        background: linear-gradient(180deg, #5EACE3 0%, rgba(217, 217, 217, 0) 100%);
+        background-repeat: no-repeat;
+    }
+}
