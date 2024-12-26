@@ -35,13 +35,13 @@ export function Header() {
             <LanguageSwitcher />
             <ThemeToggle />
             <div className="flex items-center gap-4">
-              <a href="https://github.com/seu-usuario" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+              <a href="https://github.com/vagnercruz" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
                 <Github size={20} />
               </a>
-              <a href="https://linkedin.com/in/seu-usuario" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+              <a href="https://www.linkedin.com/in/vagner-matheus/" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
                 <Linkedin size={20} />
               </a>
-              <a href="mailto:seu-email@exemplo.com" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+              <a href="mailto:vagnercruz48@gmail.com" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
                 <Mail size={20} />
               </a>
             </div>
